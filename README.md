@@ -1,2 +1,2 @@
 # simbar
-SIMBAR
+https://alchemz.github.io/simbar/
