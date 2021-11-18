@@ -1,2 +1,2 @@
 # simbar
-https://alchemz.github.io/simbar/
+<!-- https://alchemz.github.io/simbar/ -->
