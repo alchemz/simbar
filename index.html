@@ -175,7 +175,7 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-4 has-text-centered">DIV2K Bridge Input Image </h2>
-            <img src="simbar/static/images/div2k_desert.png" alt="DIV2K Bridge" height="100%" width="100%"> 
+            <img src="/simbar/static/images/div2k_desert.png" alt="DIV2K Bridge" height="100%" width="100%"> 
         </div>
       </div>
           
@@ -184,7 +184,7 @@
         <div class="columns is-centered">
           <div class="column content">
             <video id="matting-video" autoplay controls muted loop height="100%">
-              <source src="simbar/static/images/div2k_desert_fps10.mp4"
+              <source src="/simbar/static/images/div2k_desert_fps10.mp4"
                     type="video/mp4">
             </video>
           </div>
@@ -203,26 +203,26 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
           <video id="dollyzoom" autoplay controls muted loop height="85%" width="85%">
-            <source source src="simbar/static/images/div2k_0158_fps10.mp4"
+            <source source src="/simbar/static/images/div2k_0158_fps10.mp4"
                     type="video/mp4">
           </video>
       
 
 
             <video id="matting-video" autoplay controls muted loop height="85%" width="85%">
-              <source src="simbar/static/images/div2k_0667_fps10.mp4"
+              <source src="/simbar/static/images/div2k_0667_fps10.mp4"
                     type="video/mp4">
             </video>
           </div>
 
           <div class="column is-centered">
             <video id="matting-video" autoplay controls muted loop height="85%" width="85%">
-              <source src="simbar/static/images/div2k_0710_crop_fps10.mp4"
+              <source src="/simbar/static/images/div2k_0710_crop_fps10.mp4"
                     type="video/mp4">
             </video>
 
             <video id="matting-video" autoplay controls muted loop height="86%" width="86%">
-              <source src="simbar/static/images/div2k_0834_fps10.mp4"
+              <source src="/simbar/static/images/div2k_0834_fps10.mp4"
                     type="video/mp4">
             </video>
           </div>
@@ -232,7 +232,7 @@
       <div class="columns is-centered has-text-centered">
         <div class="column">
             <video id="matting-video" autoplay controls muted loop height="92%" width="92%">
-              <source src="simbar/static/images/kitti_road_fps10.mp4"
+              <source src="/simbar/static/images/kitti_road_fps10.mp4"
                     type="video/mp4">
             </video>
           </div>
@@ -306,7 +306,7 @@
     <div class="container is-max-desktop">
             <h2 class="title is-3 has-text-centered" center>Method</h2>
             <figure class="image is-inline-block" >
-              <img src="simbar/static/images/pipeline_new.png" alt="Method">
+              <img src="/simbar/static/images/pipeline_new.png" alt="Method">
           </figure>
           <p>
             <b>(a) Geometry estimation:</b> A single input image, <i>I</i>, is fed to monocular depth estimation networks (<i>m</i>). The predicted depth map, <i>D</i>, is used to form the vertex coordinates. The resulting set of vertices and faces forms 3D neural rendering mesh, <i>M</i>. <b>(b) Image relighting:</b> a set of input buffers, <i>I<sub>B</sub></i>, are rendered with respect to the camera pose using <i>M</i>. The relighting networks refine the shadow maps to produce the relit output. Here, <i>r<sub>src</sub></i> refines the source shadow map <i>S<sub>src</sub></i> and <i>r<sub>tgt</sub></i> refines the target shadow map <i>S<sub>src</sub></i>. Finally, <i>r<sub>out</sub></i> takes both as input, along with <i>I<sub>B</sub></i>, to generate the final relit image.
@@ -321,7 +321,7 @@
         <div class="column is-centered">
           <h2 class="title is-6">Baseline</h2>
           <video id="dollyzoom" autoplay controls muted loop height="100%" width="100%">
-            <source source src="simbar/static/images/exp_sc4_kitti_Baseline_vkitti_0001_morning_Trim.mp4"
+            <source source src="/simbar/static/images/exp_sc4_kitti_Baseline_vkitti_0001_morning_Trim.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -329,7 +329,7 @@
           <div class="column is-centered">
             <h2 class="title is-6">Single View</h2>
             <video id="matting-video" autoplay controls muted loop height="100%" width="100%">
-              <source src="simbar/static/images/exp_sc1_kitti_SR_vkitti_0001_morning_Trim.mp4"
+              <source src="/simbar/static/images/exp_sc1_kitti_SR_vkitti_0001_morning_Trim.mp4"
                     type="video/mp4">
             </video>
           </div>
@@ -337,7 +337,7 @@
           <div class="column is-centered">
             <h2 class="title is-6">Multi View</h2>
             <video id="matting-video" autoplay controls muted loop height="100%" width="100%">
-              <source src="simbar/static/images/exp_sc4_kitti_MR_vkitti_0001_morning_Trim.mp4"
+              <source src="/simbar/static/images/exp_sc4_kitti_MR_vkitti_0001_morning_Trim.mp4"
                     type="video/mp4">
             </video>
           </div>
