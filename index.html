@@ -319,29 +319,32 @@
   <h2 class="title is-3 has-text-centered" center>Quantitative Evaluation on CenterTrack</h2>
     <div class="columns">
         <div class="column is-centered">
-          <h2 class="title is-6">Baseline</h2>
+          <h2 class="title is-6">Model K Failure Case</h2>
           <video id="dollyzoom" autoplay controls muted loop height="100%" width="100%">
             <source source src="https://alchemz.github.io/simbar/static/images/exp_sc4_kitti_Baseline_vkitti_0001_morning_Trim.mp4"
                     type="video/mp4">
           </video>
         </div>
+      </div>
 
           <div class="column is-centered">
-            <h2 class="title is-6">Single View</h2>
+            <h2 class="title is-6">Model K+M Success Case</h2>
+            <video id="matting-video" autoplay controls muted loop height="100%" width="100%">
+              <source src="https://alchemz.github.io/simbar/static/images/exp_sc4_kitti_MR_vkitti_0001_morning_Trim.mp4"
+                    type="video/mp4">
+            </video>
+          </div>
+
+
+          <div class="column is-centered">
+            <h2 class="title is-6">Model K+S Success Case</h2>
             <video id="matting-video" autoplay controls muted loop height="100%" width="100%">
               <source src="https://alchemz.github.io/simbar/static/images/exp_sc1_kitti_SR_vkitti_0001_morning_Trim.mp4"
                     type="video/mp4">
             </video>
           </div>
 
-          <div class="column is-centered">
-            <h2 class="title is-6">Multi View</h2>
-            <video id="matting-video" autoplay controls muted loop height="100%" width="100%">
-              <source src="https://alchemz.github.io/simbar/static/images/exp_sc4_kitti_MR_vkitti_0001_morning_Trim.mp4"
-                    type="video/mp4">
-            </video>
-          </div>
-      </div>
+    </div>
 </section>
 
 
@@ -410,37 +413,16 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <!--
-      <a class="icon-link"
-         href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
+      <!--<a href="./resources/worldsheet.pdf" class="large-font bottom_buttons">
+        <i class="fas fa-file-pdf"></i>-->
       </a>
-    -->
-      <!--
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
-        <i class="fab fa-github"></i>
+      <!--<a href="https://github.com/facebookresearch/worldsheet" class="large-font bottom_buttons">
+        <i class="fab fa-github"></i>-->
       </a>
-    -->
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under <!--<a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.-->
-          </p>
-          <!--
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
-        -->
-        </div>
-      </div>
+      <br />
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">D-NeRF</span></a>.</p>
+      <p>Copyright © 2021 Facebook Inc   Copyright © 2021 Meta Platforms, Inc</p>
+      <p><a href="https://opensource.facebook.com/legal/terms">Terms of Use</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://opensource.facebook.com/legal/privacy">Privacy Policy</a></p>
     </div>
   </div>
 </footer>
