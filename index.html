@@ -74,7 +74,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Single Image-Based Scene Relighting For Effective Data Augmentation For Automated Driving Vision Tasks</h1>
+          <h1 class="title is-1 publication-title">SIMBAR: Single Image-Based Scene Relighting For Effective Data Augmentation For Automated Driving Vision Tasks</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <!--
@@ -112,49 +112,50 @@
               <!-- PDF Link. -->
               <span class="link-block">
 
-                <!-- <a href="https://azureford-my.sharepoint.com/:b:/r/personal/xzhan258_ford_com/Documents/cvpr_2022_relighting/CVPR2022_SIMBAR/9480_SIMBAR.pdf?csf=1&web=1&e=KeeY6T"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://azureford-my.sharepoint.com/:b:/r/personal/xzhan258_ford_com/Documents/cvpr_2022_relighting/CVPR2022_SIMBAR/9480_SIMBAR.pdf?csf=1&web=1&e=KeeY6T"
+                   class="external-link button is-normal is-rounded is-dark" disabled>>
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                   </span>
                   <span>Paper</span>
                 </a>
               </span>
-              <!--
+              
               <span class="link-block">
                 <a href="https://arxiv.org/abs/2011.12948"
-                   class="external-link button is-normal is-rounded is-dark">
+                   class="external-link button is-normal is-rounded is-dark" disabled>>
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
                 </a>
               </span>
-            -->
+            
               <!-- Video Link. -->
               <span class="link-block">
-                <!-- <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
+                   class="external-link button is-normal is-rounded is-dark" disabled>>
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
                   </span>
                   <span>Video</span>
                 </a>
               </span>
-              <!-- Code Link. -->
+              <!-- Code Link. 
               <span class="link-block">
-                <!-- <a href="https://github.com/google/nerfies"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                  <a href="https://github.com/google/nerfies"
+                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
                   </a>
               </span>
+              -->
               <!-- Dataset Link. -->
               <span class="link-block">
-                <!-- <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark"> -->
+                <a href="https://github.com/google/nerfies/releases/tag/0.1"
+                   class="external-link button is-normal is-rounded is-dark" disabled>>
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
@@ -175,7 +176,13 @@
       <div class="column">
         <div class="content">
           <h2 class="title is-4 has-text-centered">DIV2K Bridge Input Image </h2>
-            <img src="https://alchemz.github.io/simbar/static/images/div2k_desert.png" alt="DIV2K Bridge" height="100%" width="100%"> 
+            <img src="https://alchemz.github.io/simbar/static/images/div2k_desert.png" alt="DIV2K Desert" height="100%" width="100%"> 
+        </div>
+      </div>
+        <div class="column">
+        <div class="content">
+          <h2 class="title is-4 has-text-centered">DIV2K Bridge 3D Mesh </h2>
+            <img src="./static/images/div2k_desert_mesh.png" alt="DIV2K Bridge" height="100%" width="100%"> 
         </div>
       </div>
           
@@ -319,9 +326,9 @@
   <h2 class="title is-3 has-text-centered" center>Quantitative Evaluation on CenterTrack</h2>
     <div class="columns is-centered has-text-centered">
         <div class="column is-centered">
-          <h2 class="title is-6">Model K Failure Case</h2>
+          <h2 class="title is-6">Model K Tracking and Detection Result</h2>
           <video id="dollyzoom" autoplay controls muted loop height="45%" width="45%">
-            <source source src="https://alchemz.github.io/simbar/static/images/exp_sc4_kitti_Baseline_vkitti_0001_morning_Trim.mp4"
+            <source source src="./static/images/exp_sc4_kitti_Baseline_vkitti_0001_morning_slow_crop.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -329,9 +336,9 @@
 
       <div class="columns is-centered has-text-centered">
           <div class="column is-centered">
-            <h2 class="title is-6">Model K+M Success Case</h2>
+            <h2 class="title is-6">Model K+M Tracking and Detection Result</h2>
             <video id="matting-video" autoplay controls muted loop height="45%" width="45%">
-              <source src="https://alchemz.github.io/simbar/static/images/exp_sc4_kitti_MR_vkitti_0001_morning_Trim.mp4"
+              <source src="./static/images/exp_sc4_kitti_MR_vkitti_0001_morning_slow_crop.mp4"
                     type="video/mp4">
             </video>
           </div>
@@ -339,9 +346,9 @@
 
       <div class="columns is-centered has-text-centered">
           <div class="column is-centered">
-            <h2 class="title is-6">Model K+S Success Case</h2>
+            <h2 class="title is-6">Ours: Model K+S Tracking and Detection Result</h2>
             <video id="matting-video" autoplay controls muted loop height="45%" width="45%">
-              <source src="https://alchemz.github.io/simbar/static/images/exp_sc1_kitti_SR_vkitti_0001_morning_Trim.mp4"
+              <source src="./static/images/exp_sc1_kitti_SR_vkitti_0001_morning_slow_crop.mp4"
                     type="video/mp4">
             </video>
           </div>
