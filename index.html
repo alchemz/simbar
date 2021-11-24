@@ -296,7 +296,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <iframe src=" "
+          <iframe src="https://alchemz.github.io/simbar/static/images/9480_SIMBAR_Supp_1080p.mp4"
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
@@ -322,63 +322,45 @@
     </div>
 </section>
 
-<section class="section">
-  <h2 class="title is-3 has-text-centered" center>Quantitative Evaluation on CenterTrack</h2>
-    <div class="columns is-centered has-text-centered">
-        <div class="column is-centered">
-          <!-- <h2 class="title is-6">Model K Tracking and Detection Result</h2> -->
-          <video id="dollyzoom" autoplay controls muted loop height="45%" width="45%">
-            <source source src="https://alchemz.github.io/simbar/static/images/centertrack_results_collage_720p.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-    <!-- <div class="columns is-centered has-text-centered">
-        <div class="column is-centered">
-          <h2 class="title is-6">Model K Tracking and Detection Result</h2>
-          <video id="dollyzoom" autoplay controls muted loop height="45%" width="45%">
-            <source source src="https://alchemz.github.io/simbar/static/images/exp_sc4_kitti_Baseline_vkitti_0001_morning_slow_crop.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <div class="columns is-centered has-text-centered">
-          <div class="column is-centered">
-            <h2 class="title is-6">Model K+M Tracking and Detection Result</h2>
-            <video id="matting-video" autoplay controls muted loop height="45%" width="45%">
-              <source src="https://alchemz.github.io/simbar/static/images/exp_sc4_kitti_MR_vkitti_0001_morning_slow_crop.mp4"
-                    type="video/mp4">
-            </video>
-          </div>
-        </div>
-
-      <div class="columns is-centered has-text-centered">
-          <div class="column is-centered">
-            <h2 class="title is-6">Ours: Model K+S Tracking and Detection Result</h2>
-            <video id="matting-video" autoplay controls muted loop height="45%" width="45%">
-              <source src="https://alchemz.github.io/simbar/static/images/exp_sc1_kitti_SR_vkitti_0001_morning_slow_crop.mp4"
-                    type="video/mp4">
-            </video>
-          </div>
-        </div> -->
-</section>
-
-
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-            <h2 class="title is-3 has-text-centered" center>Comparison to Prior State-of-the-Art</h2>
+            <h2 class="title is-3 has-text-centered" center>Comparison to Prior Art</h2>
             <figure class="image is-inline-block" >
-              <img src="" >
+              <img src="https://alchemz.github.io/simbar/static/images/compare_to_mvr.png" >
           </figure>
           <p>
-            Here will be comparison to MVR 
+            To the best of our knowledge, there is no prior work on scene relighting leveraging explicit geometric representations from a single image. We compare our results with a prior multi-view scene relighting baseline – MVR. 
           </p>
           </div>
     </div>
 </section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+            <h2 class="title is-3 has-text-centered" center>Evaluation on CenterTrack</h2>
+            <div class="columns is-centered has-text-centered">
+            <video id="dollyzoom" autoplay controls muted loop height="80%" width="80%">
+                <source source src="https://alchemz.github.io/simbar/static/images/centertrack_results_collage_720p.mp4"
+                    type="video/mp4">
+            </video>
+          </div>
+        <p>
+        We would like to highlight the qualitative results on the virtual kitti test set. The baseline CenterTrack model K has the greatest number of false positives 
+        and false negatives. Our model, trained with KITTI augmented with SIMBAR (K+S) has overall the best detection and tracking performance, and the least number 
+        of false positives and miss detections. 
+      </p>
+      <p>
+        Quantitatively, we report that CenterTrack model trained on KITTI augmented with SIMBAR achieves the highest MOTA of <b>93.3%</b> - a <b>9.0%</b> relative improvement over 
+        the baseline MOTA of <b>85.6%</b>. This model also achieves the MODA of <b>94.1%</b> - again an impressive 8.9% relative improvement over the baseline MODA of <b>86.4%</b>. 
+      </p>
+          </div>
+    </div>
+</section>
+
+
+
 
 
 <!-- Concurrent Work. 
